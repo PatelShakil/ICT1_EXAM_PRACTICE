@@ -1,0 +1,7 @@
+ejb\MovieBean.class
+entity\Theater.class
+com\techsavvy\ict1practice\resources\JakartaEE10Resource.class
+entity\Movie.class
+cdi\HomeBean.class
+ejb\MovieBeanLocal.class
+com\techsavvy\ict1practice\JakartaRestConfiguration.class

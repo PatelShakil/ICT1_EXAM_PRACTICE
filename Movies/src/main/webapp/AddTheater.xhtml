@@ -1,0 +1,31 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+        <f:view>
+
+
+            <h:form>
+                <h1><h:outputText value="Create Theater"/></h1>
+                <h:panelGrid columns="2">
+                    <h:outputLabel value="Name:" for="name" />
+                    <h:inputText id="name" value="#{home.thname}" title="Name" />
+                    <h:outputLabel value="City:" for="city" />
+                    <h:inputText id="city" value="#{home.city}" title="City" />
+                    <h:outputLabel value="State:" for="state" />
+                    <h:inputText id="state" value="#{home.state}" title="State" />
+                    <h:outputLabel value="Location:" for="location" />
+                    <h:inputText id="location" value="#{home.location}" title="Location" />
+                    <h:commandButton action="#{home.addTheater()}" value="Add Theater" />
+
+                </h:panelGrid>
+            </h:form>
+        </f:view>
+
+    </h:body>
+</html>
